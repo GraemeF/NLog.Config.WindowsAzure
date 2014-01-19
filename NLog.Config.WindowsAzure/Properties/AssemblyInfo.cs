@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("NLog.Config.WindowsAzure")]
 [assembly: AssemblyDescription("Configure NLog logging using configuration files in Blob Storage.")]
+[assembly: AssemblyCompany("Graeme Foster")]
 [assembly: AssemblyProduct("NLog.Config.WindowsAzure")]
 [assembly: AssemblyCopyright("Copyright © Graeme Foster 2014")]
 
