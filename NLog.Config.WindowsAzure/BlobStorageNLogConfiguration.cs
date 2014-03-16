@@ -44,9 +44,9 @@ namespace NLog.Config.WindowsAzure
 
         private static bool IsNLogConfigSpecified()
         {
-            return !(string.IsNullOrWhiteSpace(ConnectionStringSettingName) ||
-                     string.IsNullOrWhiteSpace(ContainerNameSettingName) ||
-                     string.IsNullOrWhiteSpace(BlobNameSettingName));
+            return !(string.IsNullOrWhiteSpace(CloudConfigurationManager.GetSetting(ConnectionStringSettingName)) ||
+                     string.IsNullOrWhiteSpace(CloudConfigurationManager.GetSetting(ContainerNameSettingName)) ||
+                     string.IsNullOrWhiteSpace(CloudConfigurationManager.GetSetting(BlobNameSettingName)));
         }
 
         public void ConfigureLogging()
